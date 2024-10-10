@@ -1,0 +1,40 @@
+.navbar {
+    transition: all 0.5s;
+    height: 120px;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.form-control-transparent {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.865);
+    }
+
+    .cart-center {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-item {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 991.98px) {
+    
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.865);
+    }
+    .cart-center {
+        margin-right: 0  !important;
+    }
+}

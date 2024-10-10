@@ -1,0 +1,213 @@
+body{
+    overflow-x: hidden;
+} 
+.navbar-scrolled{
+    background-color: black;
+}
+.navbar{
+    transition: all 0.5s;
+    height:120px;
+}
+.navbar-brand {
+    padding-left: 20px;
+  }
+
+
+
+.form-control-transparent {
+    background-color: transparent !important;
+    border-color: transparent ;
+    color: white !important; 
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(2, 40, 31, 0.365);
+    z-index: 1;
+
+}
+/*filter: brightness(0.3);*/
+
+.img {
+    max-width:100%;
+    height: 100px;
+}
+
+  .custom-color {
+    color: #000000;
+}
+.category {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.custom-col{
+    margin-right: 42px;
+}
+.benefit-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.benefit-text {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .benefit-item {
+        margin-bottom: 10px;
+    }
+}
+.category-icon {
+    width: 20px;
+    height:40px; 
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+.card{
+    display: inline-block !important;
+    margin: 5px;
+    width: 282px !important;
+    
+}
+.card-container {
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+#footer {
+    height: auto !important;
+  }
+
+  .social-icons {
+    margin-top: 10px; 
+  }
+
+  .social-icons .nav {
+    display: inline-block;
+  }
+
+
+
+  @media (max-width: 800px) {
+    .nav-item {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 991.98px) {
+    
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.865);
+    }
+    .cart-center {
+        margin-right: 0  !important; 
+    }
+}
+/*sidebar*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.sidebar.show {
+    right: 0;
+}
+.sidebar-content {
+    position: relative;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+.card-info-list li::marker {
+    color: rgb(29, 200, 160);
+}
+.card-price {
+    font-size: 28px;
+    color: #006549;
+}
+.card-info-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 300px;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100%;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+}
+.sidebar-content {
+    padding: 20px;
+}
+.sidebar.active {
+    right: 0;
+}
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+}
+.cart-item-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.cart-item-details {
+    flex-grow: 1;
+}
+.cart-item-name {
+    font-weight: bold;
+}
+.cart-item-remove {
+    margin-left: auto;
+}

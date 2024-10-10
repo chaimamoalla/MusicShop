@@ -1,0 +1,33 @@
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.sidebar.show {
+    right: 0;
+}
+
+.sidebar-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    font-size: 20px;
+    cursor: pointer;
+    color: black; 
+    transform: translateY(-50%);
+}
+
+.close-btn:hover {
+    color: red;
+}
